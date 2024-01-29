@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  -  docker build -t docimg -f Dockerfile.dev
+  -  docker build -t abhishek/docker-react -f Dockerfile.dev .
 
 script:
- - docker run docImg npm run test -- --converage
+ - docker run abhishek/docker-react npm run test -- --converage
